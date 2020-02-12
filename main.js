@@ -6,6 +6,7 @@ const updateColor = () => {
   const canvasElement = document.querySelector('#canvas')
   canvasElement.style.backgroundColor = `rgb(${r},${g},${b})`
   canvasElement.style.border = "thin solid black"
+  colorValues()
 }
 
 // configure event listeners
@@ -19,6 +20,6 @@ document.querySelector('#green').addEventListener('touchend', updateColor)
 
 addEventListener('click', () => alert("hello!"))
 
+
 // call the handler 
 updateColor() 
-document.write(5 + 6)
